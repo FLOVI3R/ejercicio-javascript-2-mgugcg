@@ -11,5 +11,13 @@
 window.addEventListener("load", onLoad);
 
 function onLoad() {
-  console.log("hi");
+  var element = document.getElementsByTagName("li");
+  for(i = 0; i < element.length; i++) {
+    element[i].className = "element-" + (i + 1);
+  }
+
+  var evenList = document.querySelectorAll("li");
+  for(i = 2; i < evenList.length; i+2){
+    
+  }
 }
